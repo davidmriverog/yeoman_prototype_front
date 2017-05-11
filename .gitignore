@@ -1,3 +1,5 @@
+npm-debug.log
+env.json
 .tmp/
 coverage/
 dist/

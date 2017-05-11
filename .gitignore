@@ -1,7 +1,9 @@
 npm-debug.log
+environment.json
 env.json
 .tmp/
 coverage/
 dist/
 node_modules/
 bower_components/
+src/app/constants/

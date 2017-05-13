@@ -7,4 +7,4 @@ dist/
 node_modules/
 bower_components/
 constants/environment.json
-constants/environment.js
+src/app/constants/environment.js

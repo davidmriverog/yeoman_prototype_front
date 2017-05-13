@@ -14,7 +14,8 @@ gulp.task('inject', gulp.series(gulp.parallel('styles', 'scripts'), 'inject'));
 gulp.task('build', gulp.series('partials', gulp.parallel('inject', 'other'), 'build'));
 gulp.task('test', gulp.series('scripts', 'karma:single-run'));
 gulp.task('test:auto', gulp.series('watch', 'karma:auto-run'));
-gulp.task('serve', gulp.series('inject', 'watch', 'browsersync','environment','configenv'));
+gulp.task('env', gulp.series('environment','configenv'));
+gulp.task('serve', gulp.series('inject', 'watch', 'browsersync','env'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
@@ -31,6 +32,7 @@ function watch(done) {
   ], gulp.parallel('inject'));
 
   gulp.watch(conf.path.src('app/**/*.html'), gulp.series('partials', reloadBrowserSync));
+  gulp.watch(conf.path.const('environment.json'), gulp.series('env', reloadBrowserSync));
   gulp.watch([
     conf.path.src('**/*.scss'),
     conf.path.src('**/*.css')

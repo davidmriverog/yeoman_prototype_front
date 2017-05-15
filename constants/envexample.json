@@ -7,6 +7,9 @@
           "property_one":"one",
           "property_two":"two"
         }
+      },
+      "config_develop":{
+        "linebreak_style":["error", "windows"]
       }
     }
   }

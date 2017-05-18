@@ -58,3 +58,21 @@ npm install -g bower
 npm install -g yo
 npm install -g generator-fountain-angular1
 ```
+
+### Variables globales de entorno
+
+Es importante definir en el proyecto la variable global de entorno que no es mas que un archivo .json donde iran los atributos de conexion al rest api y entre otras funcionalidades.
+
+Para ellos nos dirigimos en nuestra consola y ejectuamos esta linea de comando.
+
+```
+cp constants/envexample.json constants/environment.json
+```
+
+Nota: debes estar el carpeta destino de tu proyecto.
+
+### Compilación o ejecución del proyecto.
+
+```
+gulp serve
+```

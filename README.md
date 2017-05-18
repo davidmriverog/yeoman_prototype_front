@@ -69,10 +69,12 @@ Para ellos nos dirigimos en nuestra consola y ejectuamos esta linea de comando.
 cp constants/envexample.json constants/environment.json
 ```
 
-Nota: debes estar el carpeta destino de tu proyecto.
+Nota: debes estar el carpeta destino de tu proyecto. Solamente se modificará el fichero 'environment.json' en caso de cambiar de api u otros valores.
 
-### Compilación o ejecución del proyecto.
+### Compilación o ejecución del proyecto a nivel de desarrollo.
 
 ```
 gulp serve
 ```
+
+Una vez finalizada el despliegue te ubicas en tu navegador de preferencia accede con esta direccion http://localhost:3000

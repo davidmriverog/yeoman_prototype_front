@@ -24,7 +24,7 @@ cd c:\wamp64\www
 cd /var/www/html
 ```
 
-Nota el lugar donde clonaremos este proyecto no necesariamente tienen que ser esas rutas. Sino para que tengan idea debemos tener una ruta destino donde el proyecto ya a ejecutarse.
+Nota el lugar donde clonaremos este proyecto no necesariamente tienen que ser esas rutas. Sino para que tengan idea debemos que tener una ruta destino donde el proyecto va a ejecutarse.
 
 ### clonar el repositorio
 
@@ -37,3 +37,24 @@ git clone https://github.com/USERNAME/yeoman_prototype_front.git
 Es importante tener instalado el servidor nodeJS en nuestro equipo y para ello lo deberás efectuar mediante su sitio oficial.
 * [Pagina oficial de nodejs](https://nodejs.org/en/)
 * [Instalar NodejS en Linux Debian ](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+
+### Instalar las dependencias globales
+
+# Gulp 
+
+```
+npm install -g gulp-cli
+```
+
+# bower 
+
+```
+npm install -g bower
+```
+
+# Yeoman Generator
+
+```
+npm install -g yo
+npm install -g generator-fountain-angular1
+```

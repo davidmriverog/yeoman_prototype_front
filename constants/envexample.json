@@ -1,7 +1,7 @@
 {
   "env": {
     "build": {
-      "ApiUrl": "my_url_local",
+      "ApiUrl": "http://crackdeveloperapi.dev/api",
       "providers": {
         "my_provider_one":{
           "property_one":"one",

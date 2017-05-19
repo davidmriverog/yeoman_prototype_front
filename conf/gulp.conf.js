@@ -60,5 +60,5 @@ exports.errorHandler = function (title) {
  */
 exports.wiredep = {
   exclude: [/\/bootstrap\.js$/, /\/bootstrap-sass\/.*\.js/, /\/bootstrap\.css/],
-  directory: 'bower_components'
+  directory: 'bower_components',
 };

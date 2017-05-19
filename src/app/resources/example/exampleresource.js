@@ -1,11 +1,12 @@
-function Exampleresource() {
+function coreServices(apirestService) {
+  return {
+    testSuccess: apirestService.callService.get('/core/test-success-data', [])
+  };
 }
 
-Exampleresource.prototype.getData = function () {
-  return 1 + 2;
-};
+coreServices.$inject = ['apirestService'];
 
 angular
   .module('app')
-  .service('Exampleresource', Exampleresource);
+  .factory('coreServices', coreServices);
 
